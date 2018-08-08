@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bitbattle-carsearch
+logging.level: INFO
+server.port: 2517
+
+#jdbc config
+jdbc.driverClassName: com.mysql.jdbc.Driver
+jdbc.url: jdbc:mysql://192.168.201.15:3306/MyKaarmaVMDB
+jdbc.username: kaarbizprod
+jdbc.password: kaarma2010prod
+jdbc.minPoolSize: 1
+jdbc.maxPoolSize: 10
