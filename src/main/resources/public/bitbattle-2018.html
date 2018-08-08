@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(55,123,181);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+
+<div ng-app="bitBattleApp" class="container" ng-controller="bitBattleCtrl" >
+ 
+ <h1>myKaarma BitBatte 2018 Sample</h1>
+ <hr/>
+ <p> Please select any one of the following</p>
+ <form>
+ <div class="radio-inline">
+  <label><input type="radio" name="optradio" ng-model="make" value="Honda" checked>Honda</label>
+ </div>
+ <div class="radio-inline">
+  <label><input type="radio" name="optradio"  ng-model="make" value="Toyota">Toyota</label>
+ </div>
+ <div class="radio-inline">
+  <label><input type="radio" name="optradio"  ng-model="make" value="Hyundai">Hyundai</label>
+ </div>&nbsp;&nbsp;&nbsp;
+ <button ng-click="findResults()" class="btn btn-primary">Find</button>
+ </form>
+ <hr/>
+ <div class="table-responsive">
+ 
+ <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Dealer Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in searchResults">
+        <td>{{x.Name}}</td>
+      </tr>
+    </tbody>    
+ </table>
+ <div class="{{lblStatusMsg}}" ng-model="lblStatusMsg"></div>
+ </div>
+</div>
+<script>
+var app = angular.module('bitBattleApp', []);
+
+app.controller('bitBattleCtrl', function($scope, $http) {
+    
+  $scope.findResults = function() {
+    alert($scope.make);
+    $scope.lblStatusMsg='loader';
+    $http({
+        method : "GET",
+        url : "https://www.w3schools.com/angular/customers.php"
+    }).then(function mySuccess(response) {
+        
+        $scope.searchResults = response.data.records;
+        $scope.lblStatusMsg='';
+    }, function myError(response) {
+        $scope.searchResults = response.statusText;
+    });
+  }
+});
+</script>
+</body>
+
+</html>
