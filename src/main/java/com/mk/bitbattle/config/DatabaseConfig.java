@@ -25,14 +25,6 @@ public class DatabaseConfig {
 	@Value("${jdbc.password}")
 	private String password;
 	
-	@Value("${jdbc.minPoolSize}")
-	private int minPoolSize;
-	
-	@Value("${jdbc.maxPoolSize}")
-	private int maxPoolSize;
-	
-	@Value("${jdbc.minPoolSize}")
-	private int minIdle;
 	
 	@Bean(destroyMethod = "")
 	public DataSource getDataSource(){
@@ -41,9 +33,6 @@ public class DatabaseConfig {
 		dataSource.setUrl(url);
 		dataSource.setUsername(username);
 		dataSource.setPassword(password);
-		dataSource.setInitialSize(minPoolSize);
-		dataSource.setMaxTotal(maxPoolSize);
-		dataSource.setMinIdle(minIdle);
 		return dataSource;
 	}
 	
