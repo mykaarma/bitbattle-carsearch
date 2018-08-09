@@ -51,19 +51,19 @@ Ready to use!!
 /src/main/resources/public/bitbattle-2018.html
 
 /src/main/resources/public/styles/bitbattle-2018.css
-
+```
 Together responsible for layout/styling of webpage.
 
 Technologies used: [HTML](https://www.w3schools.com/html/) [CSS](https://www.w3schools.com/css/) [BOOTSTRAP](https://www.w3schools.com/bootstrap) 
 
-
+```
 /src/main/resources/public/js/bitbattle-2018.js
-
+```
 Functions/Logic to handle actions on client and calls rest endpoint for search results.
 
 Technologies used: [ANGULARJS](https://www.w3schools.com/angularjs) 
  
-```
+
 
 ### Rest Layer 
 ### Database Layer
