@@ -28,9 +28,9 @@ Run mysql server
 
 Open command line tool
 
-```wget https://mykaarma-bitbattle.s3.amazonaws.com/VehicleInventoryData_Sample1.sql```
+```wget https://mykaarma-bitbattle.s3.amazonaws.com/VehicleInventoryData_Sample1.sql
 
-```mysql -u root -proot -h localhost -P 3306 RawVehicleInventory -e "source VehicleInventoryData_Sample1.sql"```
+mysql -u root -proot -h localhost -P 3306 RawVehicleInventory -e "source VehicleInventoryData_Sample1.sql"```
 
 ```cd```
 
