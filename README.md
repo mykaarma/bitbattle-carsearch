@@ -30,19 +30,19 @@ Open command line tool
 
 ```wget https://mykaarma-bitbattle.s3.amazonaws.com/VehicleInventoryData_Sample1.sql
 
-mysql -u root -proot -h localhost -P 3306 RawVehicleInventory -e "source VehicleInventoryData_Sample1.sql"```
+mysql -u root -proot -h localhost -P 3306 RawVehicleInventory -e "source VehicleInventoryData_Sample1.sql"
 
-```cd```
+cd
 
-```mkdir myKaarma-bitbattle```
+mkdir myKaarma-bitbattle
 
-```cd myKaarma-bitbattle```
+cd myKaarma-bitbattle
 
-```git clone https://github.com/mykaarma/bitbattle-carsearch.git```
+git clone https://github.com/mykaarma/bitbattle-carsearch.git
 
-```cd bitbattle-carsearch```
+cd bitbattle-carsearch
 
-```mvn clean package docker:build```
+mvn clean package docker:build```
 
 Open http://localhost:2517/bitbattle-2018.html
 
