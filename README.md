@@ -54,14 +54,14 @@ Ready to use!!
 ```
 Together responsible for layout/styling of webpage.
 
-Technologies used: [HTML](https://www.w3schools.com/html/) [CSS](https://www.w3schools.com/css/) [BOOTSTRAP](https://www.w3schools.com/bootstrap) 
+Technologies used: [HTML](https://www.w3schools.com/html/) [CSS](https://www.w3schools.com/css/) [BOOTSTRAP](https://www.w3schools.com/bootstrap/) 
 
 ```
 /src/main/resources/public/js/bitbattle-2018.js
 ```
 Functions/Logic to handle actions on client and calls rest endpoint for search results.
 
-Technologies used: [ANGULARJS](https://www.w3schools.com/angularjs) 
+Technologies used: [ANGULARJS](https://www.w3schools.com/angular/) 
  
 
 
