@@ -25,19 +25,12 @@ Open command line tool
 
 ```
 wget https://mykaarma-bitbattle.s3.amazonaws.com/VehicleInventoryData_Sample1.sql
-
 mysql -u root -proot -h localhost -P 3306 RawVehicleInventory -e "source VehicleInventoryData_Sample1.sql"
-
 cd
-
 mkdir myKaarma-bitbattle
-
 cd myKaarma-bitbattle
-
 git clone https://github.com/mykaarma/bitbattle-carsearch.git
-
 cd bitbattle-carsearch
-
 mvn clean package docker:build 
 ```
 
@@ -48,16 +41,16 @@ Ready to use!!
 ## Code Walkthrough  
 ### Client 
 ```
-/src/main/resources/public/bitbattle-2018.html
+- /src/main/resources/public/bitbattle-2018.html
 
-/src/main/resources/public/styles/bitbattle-2018.css
+- /src/main/resources/public/styles/bitbattle-2018.css
 ```
 Together responsible for layout/styling of webpage.
 
 Technologies used: [HTML](https://www.w3schools.com/html/) [CSS](https://www.w3schools.com/css/) [BOOTSTRAP](https://www.w3schools.com/bootstrap/) 
 
 ```
-/src/main/resources/public/js/bitbattle-2018.js
+- /src/main/resources/public/js/bitbattle-2018.js
 ```
 Functions/Logic to handle actions on client and calls rest endpoint for search results.
 
