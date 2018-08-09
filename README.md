@@ -1,8 +1,5 @@
 # myKaarma bitbattle sample  
 Basic sample for initial setup of myKaarma bitbattle project.
-https://mykaarma-bitbattle.s3.amazonaws.com/VehicleInventoryData_Sample1.csv
-
-https://mykaarma-bitbattle.s3.amazonaws.com/VehicleInventoryData_Sample2.csv
 
 ## How to setup? 
 These instructions will get you a copy of the project up and running on your local machine.
@@ -10,15 +7,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 Install Docker 
 
-Mac OS     - https://docs.docker.com/docker-for-mac/install/
+[Mac OS](https://docs.docker.com/docker-for-mac/install/)
 
-Windows 10 - https://docs.docker.com/docker-for-windows/install/
+[Windows 10](https://docs.docker.com/docker-for-windows/install/)
 
-Other OS   - https://docs.docker.com/install/#supported-platforms 
+[Other OS](https://docs.docker.com/install/#supported-platforms) 
 
-Install mysql client
-
-https://tableplus.io/ OR https://dev.mysql.com/downloads/workbench/
+Install mysql client - [TablePlus](https://tableplus.io/) OR  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 Run mysql server
 
