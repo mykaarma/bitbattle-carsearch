@@ -9,33 +9,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="icon" href="https://app.mykaarma.com/images/favicon.ico">
-  <style>
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid rgb(55,123,181);
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
-}
-
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-</style>
+  <link rel="stylesheet" href="styles/bitbattle-2018.css"/>
 </head>
 <body>
 
-<div ng-app="bitBattleApp" class="container" ng-controller="bitBattleCtrl" >
+<div ng-app="bitBattleApp" class="container" ng-controller="bitBattleCtrl" ng-init="searchResults=[]" >
  
- <h1>myKaarma BitBatte 2018 Sample</h1>
+ <h1>myKaarma BitBatte Sample</h1>
  <hr/>
  <p> Please select any one of the following</p>
  <form>
@@ -68,27 +48,7 @@
  <div class="{{lblStatusMsg}}" ng-model="lblStatusMsg"></div>
  </div>
 </div>
-<script>
-var app = angular.module('bitBattleApp', []);
-
-app.controller('bitBattleCtrl', function($scope, $http) {
-    
-  $scope.findResults = function() {
-    
-    $scope.lblStatusMsg='loader';
-    $http({
-        method : "GET",
-        url : "/dealer/getDealerListByMake/"+$scope.make
-    }).then(function mySuccess(response) {
-        
-        $scope.searchResults = response.data;
-        $scope.lblStatusMsg='';
-    }, function myError(response) {
-        $scope.searchResults = response.statusText;
-    });
-  }
-});
-</script>
+<script src="js/bitbattle-2018.js"></script>
 </body>
 
 </html>
