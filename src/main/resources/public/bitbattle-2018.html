@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>myKaarma BitBattle 2018 Sample</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+  <link rel="icon" href="https://app.mykaarma.com/images/favicon.ico">
   <style>
 .loader {
   border: 16px solid #f3f3f3;
@@ -25,7 +25,6 @@
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -75,7 +74,7 @@ var app = angular.module('bitBattleApp', []);
 app.controller('bitBattleCtrl', function($scope, $http) {
     
   $scope.findResults = function() {
-    alert($scope.make);
+    
     $scope.lblStatusMsg='loader';
     $http({
         method : "GET",
