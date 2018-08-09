@@ -62,7 +62,7 @@
     </thead>
     <tbody>
       <tr ng-repeat="x in searchResults">
-        <td>{{x.Name}}</td>
+        <td>{{x}}</td>
       </tr>
     </tbody>    
  </table>
@@ -82,7 +82,7 @@ app.controller('bitBattleCtrl', function($scope, $http) {
         url : "/dealer/getDealerListByMake/"+$scope.make
     }).then(function mySuccess(response) {
         
-        $scope.searchResults = response.data.records;
+        $scope.searchResults = response.data;
         $scope.lblStatusMsg='';
     }, function myError(response) {
         $scope.searchResults = response.statusText;
