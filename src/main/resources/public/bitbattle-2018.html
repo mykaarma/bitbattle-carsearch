@@ -79,7 +79,7 @@ app.controller('bitBattleCtrl', function($scope, $http) {
     $scope.lblStatusMsg='loader';
     $http({
         method : "GET",
-        url : "https://www.w3schools.com/angular/customers.php"
+        url : "/dealer/getDealerListByMake/"+$scope.make
     }).then(function mySuccess(response) {
         
         $scope.searchResults = response.data.records;
