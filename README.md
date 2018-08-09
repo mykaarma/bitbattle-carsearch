@@ -32,6 +32,7 @@ cd myKaarma-bitbattle
 git clone https://github.com/mykaarma/bitbattle-carsearch.git
 cd bitbattle-carsearch
 mvn clean package docker:build 
+docker run --restart=always --net=host --name=bitbattle -d bitbattle-carsearch
 ```
 
 Open http://localhost:2517/bitbattle-2018.html
