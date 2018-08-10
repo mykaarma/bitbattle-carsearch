@@ -51,7 +51,7 @@ Open http://localhost:2517/bitbattle-2018.html
 
 Ready to use!!
 
-After making changes you can follow steps 4-8 again to test your changes.
+After making changes you can follow steps 6-8 again to test your changes.
 
 ## Code Walkthrough  
 ### Client 
@@ -93,8 +93,11 @@ Use this class to connect to database.
 ## How to make final docker image which needs to be submitted
 
 Go to project folder
-Run commands 
+
+Run following commands
+
 ```mvn clean package docker:build ``` - to create docker image
+
 ```docker save -o <destination path for tar file> bitbattle-carsearch``` - to convert image to tar
 
-Put the tar file from destination path to the package that you will submit.
+Put the tar file from destination path to the final submission zip file along with other documents.
