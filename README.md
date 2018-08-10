@@ -72,13 +72,13 @@ Technologies used: [ANGULARJS](https://www.w3schools.com/angular/)
 
 ### Back-end
 
-[/src/main/java/com/mk/bitbattle/api/DealerServiceController.java](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/java/com/mk/bitbattle/api/DealerServiceController.java)
+- [/src/main/java/com/mk/bitbattle/api/DealerServiceController.java](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/java/com/mk/bitbattle/api/DealerServiceController.java)
 Use this class to introduce API endpoints.
 
-[/src/main/java/com/mk/bitbattle/api/impl/DealerServiceImpl.java](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/java/com/mk/bitbattle/api/impl/DealerServiceImpl.java)
+- [/src/main/java/com/mk/bitbattle/api/impl/DealerServiceImpl.java](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/java/com/mk/bitbattle/api/impl/DealerServiceImpl.java)
 Use this class to write implementation/logic for the API endpoints.
 
-[/src/main/java/com/mk/bitbattle/api/db/DealerDBImpl.java](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/java/com/mk/bitbattle/api/db/DealerDBImpl.java)
+- [/src/main/java/com/mk/bitbattle/api/db/DealerDBImpl.java](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/java/com/mk/bitbattle/api/db/DealerDBImpl.java)
 Use this class to connect to database.
 
 
