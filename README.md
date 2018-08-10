@@ -5,8 +5,7 @@ Basic sample for initial setup of myKaarma bitbattle project.
 These instructions will get you a copy of the project up and running on your local machine.
 ### Prerequisites
 
-Install Docker [Mac OS](https://docs.docker.com/docker-for-mac/install/)  
-[Windows 10](https://docs.docker.com/docker-for-windows/install/)  [Other OS](https://docs.docker.com/install/#supported-platforms) 
+Install Docker [Mac OS](https://docs.docker.com/docker-for-mac/install/) | [Windows 10](https://docs.docker.com/docker-for-windows/install/) | [Other OS](https://docs.docker.com/install/#supported-platforms) 
 
 Install mysql client - [TablePlus](https://tableplus.io/)  OR  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
