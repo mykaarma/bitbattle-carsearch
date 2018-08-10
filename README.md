@@ -52,18 +52,18 @@ After making changes you can follow steps 6-8 again to test your changes.
 
 ## Code Walkthrough  
 ### Client 
-```
-- /src/main/resources/public/bitbattle-2018.html
 
-- /src/main/resources/public/styles/bitbattle-2018.css
-```
+- [/src/main/resources/public/bitbattle-2018.html](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/resources/public/bitbattle-2018.html)
+
+- [/src/main/resources/public/styles/bitbattle-2018.css](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/resources/public/styles/bitbattle-2018.css)
+
 Together responsible for layout/styling of webpage.
 
 Technologies used: [HTML](https://www.w3schools.com/html/) [CSS](https://www.w3schools.com/css/) [BOOTSTRAP](https://www.w3schools.com/bootstrap/) 
 
-```
-- /src/main/resources/public/js/bitbattle-2018.js
-```
+
+- [/src/main/resources/public/js/bitbattle-2018.js](https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/resources/public/js/bitbattle-2018.js)
+
 Functions/Logic to handle actions on client and calls rest endpoint for search results.
 
 Technologies used: [ANGULARJS](https://www.w3schools.com/angular/) 
