@@ -17,7 +17,9 @@ Install mysql client - [TablePlus](https://tableplus.io/)  OR  [MySQL Workbench]
 
 Run mysql server
 
-```docker run --restart=always -p 3306:3306 -d --name=mysql-server  -e MYSQL_ROOT_PASSWORD=root mysql:5.7```
+```
+docker run --restart=always -p 3306:3306 -d --name=mysql-server  -e MYSQL_ROOT_PASSWORD=root mysql:5.7
+```
 
 ### Steps to run
 Open TablePlus / MySQL workbench
@@ -28,7 +30,7 @@ port  - 3306
 user  - root
 pass  - root
 ```
-Copy paste and run content of this file[RawVehicleInventory.sql] (https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/resources/schema/RawVehicleInventory.sql)
+Copy paste and run content of this file [RawVehicleInventory.sql] (https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/resources/schema/RawVehicleInventory.sql)
 
 Open command line tool
 
