@@ -13,19 +13,27 @@ Install Docker
 
 [Other OS](https://docs.docker.com/install/#supported-platforms) 
 
-Install mysql client - [TablePlus](https://tableplus.io/) OR  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+Install mysql client - [TablePlus](https://tableplus.io/)  OR  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 Run mysql server
 
 ```docker run --restart=always -p 3306:3306 -d --name=mysql-server  -e MYSQL_ROOT_PASSWORD=root mysql:5.7```
 
 ### Steps to run
+Open TablePlus / MySQL workbench
+Use following configurations to connect to mysql-server
+```
+host  - localhost
+port  - 3306
+user  - root
+pass  - root
+
+```
+Copy paste and run content of this file[RawVehicleInventory.sql] (https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/resources/schema/RawVehicleInventory.sql)
 
 Open command line tool
 
 ```
-wget https://mykaarma-bitbattle.s3.amazonaws.com/VehicleInventoryData_Sample1.sql
-mysql -u root -proot -h localhost -P 3306 RawVehicleInventory -e "source VehicleInventoryData_Sample1.sql"
 cd
 mkdir myKaarma-bitbattle
 cd myKaarma-bitbattle
