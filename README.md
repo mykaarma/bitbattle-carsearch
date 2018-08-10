@@ -39,7 +39,7 @@ cd
 rm -Rf myKaarma-bitbattle
 mkdir myKaarma-bitbattle
 cd myKaarma-bitbattle
-git clone git@github.com:mykaarma/bitbattle-carsearch.git
+git clone https://github.com/mykaarma/bitbattle-carsearch.git
 cd bitbattle-carsearch
 mvn clean package docker:build 
 docker run -p 2517:2517 --link=mysql-server:mysql_host --restart=always --name=bitbattle -d bitbattle-carsearch:latest
