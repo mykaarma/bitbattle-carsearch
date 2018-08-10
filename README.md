@@ -17,7 +17,7 @@ Install mysql client - [TablePlus](https://tableplus.io/) OR  [MySQL Workbench](
 
 Run mysql server
 
-```docker run -d --name=mysql-server --net=host mysql:latest```
+```docker run --restart=always -p 3306:3306 -d --name=mysql-server  -e MYSQL_ROOT_PASSWORD=root mysql:5.7```
 
 ### Steps to run
 
