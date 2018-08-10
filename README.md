@@ -7,7 +7,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Install Docker [Mac OS](https://docs.docker.com/docker-for-mac/install/) | [Windows 10](https://docs.docker.com/docker-for-windows/install/) | [Other OS](https://docs.docker.com/install/#supported-platforms) 
 
-Install mysql client - [TablePlus](https://tableplus.io/)  OR  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+Install mysql client - [TablePlus](https://tableplus.io/)  |  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 Install git client - [GIT](https://www.atlassian.com/git/tutorials/install-git)
 
