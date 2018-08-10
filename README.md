@@ -27,7 +27,6 @@ host  - localhost
 port  - 3306
 user  - root
 pass  - root
-
 ```
 Copy paste and run content of this file[RawVehicleInventory.sql] (https://github.com/mykaarma/bitbattle-carsearch/blob/master/src/main/resources/schema/RawVehicleInventory.sql)
 
