@@ -36,6 +36,7 @@ Open command line tool
 
 ```
 cd
+rm -Rf myKaarma-bitbattle
 mkdir myKaarma-bitbattle
 cd myKaarma-bitbattle
 git clone git@github.com:mykaarma/bitbattle-carsearch.git
