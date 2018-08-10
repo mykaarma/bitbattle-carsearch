@@ -8,10 +8,12 @@ These instructions will get you a copy of the project up and running on your loc
 Install Docker [Mac OS](https://docs.docker.com/docker-for-mac/install/) | [Windows 10](https://docs.docker.com/docker-for-windows/install/) | [Other OS](https://docs.docker.com/install/#supported-platforms) 
 
 Install mysql client - [TablePlus](https://tableplus.io/)  |  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+> Use MySQL Workbench for windows
 
 Install git client - [GIT](https://www.atlassian.com/git/tutorials/install-git)
 
 Install maven - Follow instructions [here](https://www.baeldung.com/install-maven-on-windows-linux-mac)
+> Make sure to finally download the bin zip file(apache-maven-3.3.x-bin.zip) not the src zip file.
 
 Run mysql server
 
