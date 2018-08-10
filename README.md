@@ -15,7 +15,9 @@ Install Docker
 
 Install mysql client - [TablePlus](https://tableplus.io/)  OR  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
-Install git client - 
+Install git client - [GIT](https://www.atlassian.com/git/tutorials/install-git)
+
+Install maven - Follow instructions [here](https://www.baeldung.com/install-maven-on-windows-linux-mac)
 
 Run mysql server
 
