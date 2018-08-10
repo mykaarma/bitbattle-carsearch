@@ -15,6 +15,8 @@ Install Docker
 
 Install mysql client - [TablePlus](https://tableplus.io/)  OR  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
+Install git client - 
+
 Run mysql server
 
 ```
@@ -35,19 +37,21 @@ Copy paste and run content of this file [RawVehicleInventory.sql](https://github
 Open command line tool
 
 ```
-cd
-rm -Rf myKaarma-bitbattle
-mkdir myKaarma-bitbattle
-cd myKaarma-bitbattle
-git clone https://github.com/mykaarma/bitbattle-carsearch.git
-cd bitbattle-carsearch
-mvn clean package docker:build 
-docker run -p 2517:2517 --link=mysql-server:mysql_host --restart=always --name=bitbattle -d bitbattle-carsearch:latest
+1. cd
+2. rm -Rf myKaarma-bitbattle
+3. mkdir myKaarma-bitbattle
+4. cd myKaarma-bitbattle
+5. git clone https://github.com/mykaarma/bitbattle-carsearch.git
+6. cd bitbattle-carsearch
+7. mvn clean package docker:build 
+8. docker run -p 2517:2517 --link=mysql-server:mysql_host --restart=always --name=bitbattle -d bitbattle-carsearch:latest
 ```
 
 Open http://localhost:2517/bitbattle-2018.html
 
 Ready to use!!
+
+After making changes you can follow steps 4-8 again to test your changes.
 
 ## Code Walkthrough  
 ### Client 
@@ -69,7 +73,28 @@ Technologies used: [ANGULARJS](https://www.w3schools.com/angular/)
  
 
 
-### Rest Layer 
-### Database Layer
+### Back-end
+```
+- /src/main/java/com/mk/bitbattle/api/DealerServiceController.java
+```
+Use this class to introduce API endpoints.
 
-## How to make changes and redeploy and repackage
+```
+- /src/main/java/com/mk/bitbattle/api/impl/DealerServiceImpl.java
+```
+Use this class to write implementation/logic for the API endpoints.
+
+```
+- /src/main/java/com/mk/bitbattle/api/db/DealerDBImpl.java
+```
+Use this class to connect to database.
+
+
+## How to make final docker image which needs to be submitted
+
+Go to project folder
+Run commands 
+```mvn clean package docker:build ``` - to create docker image
+```docker save -o <destination path for tar file> bitbattle-carsearch``` - to convert image to tar
+
+Put the tar file from destination path to the package that you will submit.
