@@ -36,20 +36,19 @@ Open command line tool
 
 ```
 1. cd
-2. rm -Rf myKaarma-bitbattle
-3. mkdir myKaarma-bitbattle
-4. cd myKaarma-bitbattle
-5. git clone https://github.com/mykaarma/bitbattle-carsearch.git
-6. cd bitbattle-carsearch
-7. mvn clean package docker:build 
-8. docker run -p 2517:2517 --link=mysql-server:mysql_host --restart=always --name=bitbattle -d bitbattle-carsearch:latest
+2. mkdir myKaarma-bitbattle
+3. cd myKaarma-bitbattle
+4. git clone https://github.com/mykaarma/bitbattle-carsearch.git
+5. cd bitbattle-carsearch
+6. mvn clean package docker:build 
+7. docker run -p 2517:2517 --link=mysql-server:mysql_host --restart=always --name=bitbattle -d bitbattle-carsearch:latest
 ```
 
 Open http://localhost:2517/bitbattle-2018.html
 
 Ready to use!!
 
-After making changes you can follow steps 6-8 again to test your changes.
+After making changes you can follow steps 5-7 again to test your changes.
 
 ## Code Walkthrough  
 ### Client 
